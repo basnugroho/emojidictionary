@@ -37,5 +37,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xSQ-Uc-3uD">
+            <objects>
+                <viewController id="R6G-GC-1lA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kae-if-5d0"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Zl-0f-J4N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lUh-ol-EtA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJn-sO-CZ6">
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sexy kiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXj-YU-AcL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dXj-YU-AcL" firstAttribute="top" secondItem="nJn-sO-CZ6" secondAttribute="bottom" constant="50" id="OxM-hE-tfX"/>
+                            <constraint firstItem="dXj-YU-AcL" firstAttribute="centerX" secondItem="lUh-ol-EtA" secondAttribute="centerX" id="PZU-7x-V7J"/>
+                            <constraint firstItem="nJn-sO-CZ6" firstAttribute="centerX" secondItem="lUh-ol-EtA" secondAttribute="centerX" id="ehI-Ud-6U7"/>
+                            <constraint firstItem="nJn-sO-CZ6" firstAttribute="top" secondItem="Kae-if-5d0" secondAttribute="bottom" constant="40" id="lpw-BP-qW2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8Q-7i-D5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="97"/>
+        </scene>
     </scenes>
 </document>
