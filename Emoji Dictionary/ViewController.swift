@@ -28,10 +28,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return emojis.count
     }
     
+    //isi dari row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
+    }
+    
+    //didSelect
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let emoji = emojis[indexPath.row]
+        performSegue(withIdentifier: "moveSeague", sender: emoji)
+    }
+    
+    //prepare for seague
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let defVC = segue.destination as! DefinitionViewController
+        defVC.emoji = sender as! String
     }
 
     override func didReceiveMemoryWarning() {
