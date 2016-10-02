@@ -57,7 +57,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sexy kiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXj-YU-AcL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXj-YU-AcL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-Vi-6ew">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qrm-rd-AMx">
+                                <frame key="frameInset" minX="119" minY="572" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-Zl-CVM">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,14 +79,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dMG-Vi-6ew" firstAttribute="top" secondItem="dXj-YU-AcL" secondAttribute="bottom" constant="20" id="4J2-jp-7vv"/>
+                            <constraint firstItem="dMG-Vi-6ew" firstAttribute="centerX" secondItem="lUh-ol-EtA" secondAttribute="centerX" id="BQF-Jq-baW"/>
                             <constraint firstItem="dXj-YU-AcL" firstAttribute="top" secondItem="nJn-sO-CZ6" secondAttribute="bottom" constant="50" id="OxM-hE-tfX"/>
                             <constraint firstItem="dXj-YU-AcL" firstAttribute="centerX" secondItem="lUh-ol-EtA" secondAttribute="centerX" id="PZU-7x-V7J"/>
+                            <constraint firstItem="Bb3-Zl-CVM" firstAttribute="centerX" secondItem="lUh-ol-EtA" secondAttribute="centerX" id="WKR-0z-JaN"/>
                             <constraint firstItem="nJn-sO-CZ6" firstAttribute="centerX" secondItem="lUh-ol-EtA" secondAttribute="centerX" id="ehI-Ud-6U7"/>
                             <constraint firstItem="nJn-sO-CZ6" firstAttribute="top" secondItem="Kae-if-5d0" secondAttribute="bottom" constant="40" id="lpw-BP-qW2"/>
+                            <constraint firstItem="Bb3-Zl-CVM" firstAttribute="top" secondItem="dMG-Vi-6ew" secondAttribute="bottom" constant="20" id="ned-5e-Ldt"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="definitonLabel" destination="dXj-YU-AcL" id="dU0-fD-52t"/>
+                        <outlet property="birthYearLabel" destination="Bb3-Zl-CVM" id="TGt-Gr-MJd"/>
+                        <outlet property="categoryLabel" destination="dMG-Vi-6ew" id="XMX-qJ-hfb"/>
+                        <outlet property="definitionLabel" destination="dXj-YU-AcL" id="e1B-Ze-U9B"/>
                         <outlet property="emojiLabel" destination="nJn-sO-CZ6" id="xdr-IU-pmw"/>
                     </connections>
                 </viewController>
